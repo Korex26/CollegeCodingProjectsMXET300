@@ -38,5 +38,4 @@ for  count, motion in enumerate(motions):
     sc.driveOpenLoop(wheel_speeds)                              # take the calculated wheel speeds and use them to run the motors
     voltage = ina.readVolts()
     log.tmpFile(voltage, "voltage_log.txt")
-    
     sleep(motion[2])                                            # wait the motion duration
